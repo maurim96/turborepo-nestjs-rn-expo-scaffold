@@ -1,0 +1,22 @@
+{
+  "name": "@scaffold/graphql-types",
+  "version": "0.0.0",
+  "description": "A GraphQL schema generator",
+  "devDependencies": {
+    "@scaffold/tsconfig": "workspace:*",
+    "@graphql-codegen/cli": "4.0.1",
+    "@graphql-codegen/typescript": "4.0.0",
+    "@graphql-codegen/typescript-operations": "^4.0.1",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.7",
+    "@parcel/watcher": "^2.3.0"
+  },
+  "scripts": {
+    "dev": "sleep 15 && graphql-codegen --watch",
+    "codegen:graphql": "graphql-codegen",
+    "clean": "rm -rf .turbo node_modules"
+  },
+  "dependencies": {
+    "@graphql-typed-document-node/core": "^3.2.0",
+    "graphql": "^16.8.0"
+  }
+}

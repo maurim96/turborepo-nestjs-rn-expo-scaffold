@@ -1,0 +1,3 @@
+{
+  "extends": "@scaffold/tsconfig/base.json"
+}

@@ -1,0 +1,20 @@
+query CurrentUser {
+  me {
+    id
+    firstName
+    lastName
+    dateOfBirth
+    deviceToken
+    email
+    gender
+    profilePicture
+    createdAt
+  }
+}
+
+mutation validateUserAndUpdateDeviceToken($deviceToken: String!) {
+  validateUserAndUpdateDeviceToken(deviceToken: $deviceToken) {
+    id
+    email
+  }
+}
